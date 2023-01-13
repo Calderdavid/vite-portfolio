@@ -1,5 +1,6 @@
 import React from 'react'
 import 'primeflex/primeflex.css';
+import 'primeicons/primeicons.css';
 
 export const Header = () => {
   return (
@@ -11,16 +12,62 @@ export const Header = () => {
             backdropFilter: "blur(4px)"
         }}
       >
-        <h2>Desarrollador de aplicaciones web</h2>
+        <p id="name" style={{fontSize: "5rem"}}>David Calderón</p>
+        
+        <p>Desarrollador de aplicaciones web</p>
 
-        <h3>Mi nombre es David Calderón</h3>
 
-        <p>Soy estudiante de la carrera Ingeniería Civil Informática</p>
-        <p>en la Universidad Andrés Bello</p>
-
-        <p>Mi ilusión es crecer como profesional en la Industria</p>
-        <p>del desarrollo de software</p>
-
+        <ul className="flex justify-content-center mt-4">
+            <li>
+              <a>
+                  <i 
+                    className="pi pi-linkedin cursor-pointer"
+                    style={{fontSize: '1.8em'}}
+                  ></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                  <i 
+                    className="pi pi-github ml-4 cursor-pointer"
+                    style={{fontSize: '1.8em'}}
+                  ></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                  <i 
+                    className="pi pi-instagram ml-4 cursor-pointer"
+                    style={{fontSize: '1.8em'}}
+                  ></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                  <i 
+                    className="pi pi-twitter ml-4 cursor-pointer"
+                    style={{fontSize: '1.8em'}}
+                  ></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                  <i 
+                    className="pi pi-youtube ml-4 cursor-pointer"
+                    style={{fontSize: '1.8em'}}
+                  ></i>
+              </a>
+            </li>
+        </ul>
+      </div>
+      
+      <div 
+        className="down-arrow flex justify-content-center align-items-end mt-4" 
+      >
+        <i 
+          className="scalein animation-duration-2000 animation-iteration-infinite pi pi-angle-double-down cursor-pointer"
+          style={{fontSize: '1.8em'}}
+        ></i>
       </div>
     </>
   )

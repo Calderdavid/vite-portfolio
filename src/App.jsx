@@ -3,6 +3,7 @@ import { NavBar } from './sections/navbar/NavBar'
 import './index.css'
 import header from './assets/img9.jpg';
 import { Header } from './sections/header/Header';
+import { SobreMi } from './sections/sobremi/SobreMi';
 
 
 
@@ -23,6 +24,8 @@ function App() {
         <NavBar />
         <Header />
       </div>
+
+      <SobreMi />
 
       
     </>
