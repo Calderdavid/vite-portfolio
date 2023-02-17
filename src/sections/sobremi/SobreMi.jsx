@@ -2,7 +2,7 @@ import React from 'react'
 import { Image } from 'primereact/image';
 import profile from '../../assets/img3.jpg'
 import { Button } from 'primereact/button';
-import CV from '../../assets/CV_David.pdf'
+import CV from '../../assets/CV_David_Calderon.pdf'
 import { Divider } from 'primereact/divider';
 
 export const SobreMi = () => {

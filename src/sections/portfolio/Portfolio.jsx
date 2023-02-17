@@ -160,11 +160,14 @@ export const Portfolio = () => {
                         <img alt="Card" style={{ width: '25em' }} src={Calendar} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} />
                     }>
                     <p className="m-0 " style={{lineHeight: '1.5', textAlign: 'justify', color: "#FFFFFF" }}>
-                        La presente aplicación es una Single Page Application que tiene como objetivo 
-                        mostrar una lista de héroes. La misma se desarrolla utilizando conceptos de react-router 
-                        y cuenta con una funcionalidad de búsqueda, la cual utiliza los parámetros de consulta 
-                        para filtrar el arreglo de superhéroes. De esta forma, se permite al usuario navegar a 
-                        la siguiente pantalla y regresar al mismo lugar donde se encontraba anteriormente.
+                        Desarrollé un calendario colaborativo utilizando el stack MERN (MongoDB, Express, React y Node.js), 
+                        el cual ofrece autenticación y cuenta con un backend y frontend. La aplicación permite a los 
+                        usuarios manejar eventos y agendarlos con fechas, conectándose directamente a una base de datos 
+                        en MongoDB mediante un CRUD local.
+
+
+
+
                     </p>
                 </Card>
 
