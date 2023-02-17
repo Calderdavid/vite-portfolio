@@ -1,35 +1,46 @@
 import React from 'react'
 import { Image } from 'primereact/image';
 import profile from '../../assets/img3.jpg'
+import { Button } from 'primereact/button';
+import CV from '../../assets/CV_David.pdf'
+import { Divider } from 'primereact/divider';
 
 export const SobreMi = () => {
   return (
     <>
-        <div className="flex mt-4 align-items-center">
+        <Divider className="text-center">
+            <span className="p-tag">SOBRE MÍ</span>
+        </Divider>
+        <div className="flex flex-column lg:flex-row sm:flex-column  md:flex-column  mt-4 align-items-center">
 
-            <div className="img ml-6">
+            <div className="img lg:ml-8">
                 <Image 
-                    className="border-round-sm"
                     src={profile}  
-                    height={600}
+                    height="600vh"
+                    width="400vw"
+
                 />
             </div>
             
             
-            <div className="description ml-8 mr-8">
-                <h3 style={{color: "black", fontSize: "3rem", textAlign: "center"}}>Mi nombre es David Calderón</h3>
+            <div className="description flex flex-column ">
+            {/* style={{color: "#FFFFFF", textAlign: "justify", fontSize: "1.8rem", fontWeight: "300"}} */}
+                <p  className="text-center text-xs lg:ml-8 lg:mr-8 lg:text-3xl md:text-xl font-light lg:text-justify">
+                    Soy estudiante cursando mi último año de la carrera Ingeniería Civil Informática
+                    en la Universidad Andrés Bello,
+                    mi ilusión es crecer como profesional en la industria del desarrollo de software.
 
-                <p  style={{color: "black", textAlign: "center", fontSize: "1.8rem", fontWeight: "300"}}>
-                    Soy Estudiante de la carrera Ingeniería Civil Informática
-                    en la Universidad Andrés Bello
+                    <br/>
 
-                    Mi ilusión es crecer como profesional en la industria del desarrollo de software
+                    <a href={CV} download="Curriculum-David.pdf">
+                        <Button 
+                            label="CV" 
+                            className="cursor-pointer"
+                        />
+                    </a>
 
                 </p>
             </div>
-
-
-
         </div>
     </>
   )

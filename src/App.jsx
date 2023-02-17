@@ -1,14 +1,20 @@
-import { useState } from 'react'
 import { NavBar } from './sections/navbar/NavBar'
 import './index.css'
 import header from './assets/img9.jpg';
 import { Header } from './sections/header/Header';
 import { SobreMi } from './sections/sobremi/SobreMi';
+import { Portfolio } from './sections/portfolio/Portfolio';
+import { Contacto } from './sections/contacto/Contacto';
+import { useMediaQuery } from 'react-responsive';
+import { SideBar } from './sections/navbar/SideBar';
 
 
 
 function App() {
-  const [state, setState] = useState(false)
+
+  const isBigScreen = useMediaQuery({query: '(max-width: 1824px)'})
+  const isMediumScreen = useMediaQuery({query: '(max-width: 1188px)'})
+  const isTabletOrMobile = useMediaQuery({query: '(max-width: 680px)'})
 
   return (
     <>
@@ -21,13 +27,36 @@ function App() {
           position: "relative",
         }}
       >
-        <NavBar />
-        <Header />
+        {
+          isMediumScreen ? 
+          <>
+            <SideBar />
+            {/* <NavBar /> */}
+            <Header />
+
+          </> 
+          :
+          <>
+              <NavBar />
+              <Header />
+            
+            </>
+        }
+        {
+
+        }
+
       </div>
 
-      <SobreMi />
+        {               
+          <>
+            <SobreMi />
 
-      
+            <Portfolio />
+
+            <Contacto /> 
+          </>
+        }
     </>
   )
 }
