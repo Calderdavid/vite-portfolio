@@ -24,7 +24,8 @@ export const Header = () => {
         {/* style={{fontSize: "5rem"}} */}
         <p id="name" className="text-4xl lg:text-8xl"><b>David Calderón</b></p>
         
-        <p className="text-2xl lg:text-6xl">| Desarrollador Web |</p>
+        <p className="text-2xl lg:text-6xl"> Ingeniero Civil Informático </p>
+        <p className="text-2xl lg:text-6xl">| Universidad Andrés Bello |</p>
 
 
         <ul className="flex justify-content-center mt-4">
