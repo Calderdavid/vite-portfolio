@@ -181,11 +181,14 @@ export const Portfolio = () => {
                         <img alt="Card" style={{ width: '25em' }} src={Bot} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} />
                     }>
                     <p className="m-0 " style={{lineHeight: '1.5', textAlign: 'justify', color: "#FFFFFF" }}>
-                        La presente aplicación es una Single Page Application que tiene como objetivo 
-                        mostrar una lista de héroes. La misma se desarrolla utilizando conceptos de react-router 
-                        y cuenta con una funcionalidad de búsqueda, la cual utiliza los parámetros de consulta 
-                        para filtrar el arreglo de superhéroes. De esta forma, se permite al usuario navegar a 
-                        la siguiente pantalla y regresar al mismo lugar donde se encontraba anteriormente.
+                    Creé un bot de Discord llamado "McLovin" potenciado por Node.js para mejorar la experiencia en servidores. 
+                    Este bot ofrece funciones de moderación avanzada, interacción natural mediante 
+                    procesamiento de lenguaje natural (NLP), y personalización total para adaptarse 
+                    a las necesidades de cada servidor. Integré un sistema de moderación eficiente, 
+                    comandos de entretenimiento, y una interfaz web para que los administradores 
+                    gestionen fácilmente las configuraciones. La aplicación utiliza Discord.js para 
+                    interactuar con la API de Discord y ofrece un ambiente divertido y seguro 
+                    para las comunidades.
                     </p>
                 </Card>
 
